@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelion:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gelion Light';
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.h3 {
+    font-family: Circular Std Black;
+    color: #818181;
+    font-size: 1.5rem;
+}
+
+.dotted {
+    border-top: 0.1rem solid #CBCBCB;
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+
+.form-container {
+    position: absolute;
+    top: 8rem;
+    left: 12rem;
+    background: #fff;
+    padding: 1.8rem;
+    width: 26rem;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.8rem 0rem rgb(189, 189, 189);
+    color: #929292;
+    font-weight: 600;
+    text-align: left;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #44B31F;
+    border-color: #44B31F;
+    border-radius: 0.3rem;
+    width: 6rem;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #2f8a11;
+    border-color: #2f8a11;
+    border-radius: 0.3rem;
+    width: 6rem;
+    font-weight: 600;
+}
+
+.btn-outline-primary {
+    color: #44b31f;
+    background-color: #fff;
+    border-color: #44B31F;
+    border-radius: 0.3rem;
+    border: 0.13rem solid;
+    font-weight: 600;
+    margin-top: -6.2rem;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #44b31f;
+    border-color: #44B31F;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    margin-top: -6.2rem;
+}
+
+.field {
+    width: 70%;
+}
+
+.img {
+    padding: 8rem 12rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #929292;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#preloader,
+.center,
+.text-align-center {
+    text-align: center
+}
+
+#preloader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999999;
+    background-color: #f5f5f5;
+    padding-top: 35vh
+}
+
+#preloader .img1 {
+    width: 5rem;
+}
+
+.progress {
+    background: rgba(255, 255, 255, 0.1);
+    justify-content: flex-start;
+    border-radius: 100rem;
+    position: relative;
+    padding: 0 0.1rem;
+    display: flex;
+    height: 0.15rem;
+    width: 30rem;
+    margin: 2rem 27.5rem;
+    background: #fff;
+}
+
+.progress-value {
+    animation: load 3s normal forwards;
+    border-radius: 1rem;
+    background: #44B31F;
+    height: 0.15rem;
+    width: 0;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+#myDiv {
+    display: none;
+    text-align: center;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <img src="img/Untitled-1.png" height="50px">
+            <span class="logo_name">thekabadiwala</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#" class="active">
+                    <i class='bx bx-grid-alt' id='i_active'></i>
+                    <span class="links_name_active">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-box'></i>
+                    <span class="links_name">Lorem Ipsum</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-list-ul'></i>
+                    <span class="links_name">Lorem Ipsum</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="links_name">Lorem Ipsum</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-coin-stack'></i>
+                    <span class="links_name">Lorem Ipsum</span>
+                </a>
+            </li>
+            <li class="log_out">
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Setting</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class='bx bx-menu sidebarBtn'></i>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <i class='bx bx-search'></i>
+            </div>
+            <div class="profile-details">
+                <i class="bx bx-bell"></i>
+                <img src="img/the-kabadiwala-logo.png" alt="user_dp">
+                <!--<span class="admin_name">name</span>-->
+                <!--<i class='bx bx-chevron-down'></i>-->
+            </div>
+        </nav>
+        <!--Footer-->
+        <nav class="footer_stick" style="margin-top: 550px">
+            <div class="sidebar-button">
+                <i class="bx bx-circle" id="record_icon"></i>
+                <span class="on_call">On Call...</span>
+
+            </div>
+            <div class="vl"></div>
+            <div class="search-box-footer">
+                <input type="text" placeholder="Add Comment...">
+            </div>
+            <div class="vl"></div>
+            <div class="profile-details-footer">
+                <button type='button' class='btn_close_tkt'><i class="bx bx-detail"></i> Close Ticket</button>
+                <!--feedback modal-->
+            </div>
+            <div class="profile-details-footer">
+
+                <button type='button' class='btn_end_call'><i class="bx bx-phone"></i> End Call</button>
+            </div>
+        </nav>
+        <!--footer end-->
+
+
+
+    </section>
+
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu-alt-left", "bx-menu");
+            } else
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-left");
+        }
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
